@@ -26,7 +26,21 @@
         }
         .pagination { margin: 20px 0; font-size: 16px; font-weight: bold; }
         .pagination a { padding: 10px 15px; background: #fff; border-radius: 5px; text-decoration: none; color: #003791; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 0 10px;}
-        .menu-btn { display: block; width: 80%; max-width: 300px; margin: 15px auto; padding: 15px; background: #fff; color: #003791; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        /* トップページ 2列レイアウト用スタイル（Vita完全互換テーブルレイアウト） */
+        .menu-container { display: table; width: 100%; max-width: 900px; margin: 15px auto; table-layout: fixed; }
+        .menu-col { display: table-cell; width: 50%; vertical-align: top; padding: 0 6px; box-sizing: border-box; }
+        .menu-btn { 
+            display: block; width: 100%; box-sizing: border-box; margin: 0 0 12px 0; padding: 14px 8px; 
+            background: #fff; color: #003791; text-decoration: none; border-radius: 8px; 
+            font-size: 15px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            border: 1px solid #dcdcdc; cursor: pointer; text-align: center; min-height: 48px;
+            font-family: inherit;
+        }
+        .menu-btn:active { transform: translateY(1px); }
+        .btn-search { background: #ffe833; color: #d32f2f; border-color: #fbc02d; }
+        .btn-custom-id { background: #e8f0fe; color: #1967d2; border-color: #aecbfa; }
+
         .search-box { width: 60%; max-width: 300px; padding: 12px; font-size: 16px; border: 2px solid #003791; border-radius: 8px; vertical-align: middle; }
         .search-btn { padding: 12px 20px; font-size: 16px; background: #003791; color: #fff; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; vertical-align: middle; margin-left: 5px; }
     </style>
@@ -50,7 +64,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00133_00-0000000000000000.jpg" alt="image">
     <p>閃乱カグラ SHINOVI VERSUS -少女達の証明- BEST UP！</p>
     <a href="psns:browse?product=JP0507-PCSG00133_00-0000000000000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00133.html" class="btn-dlc">DLCが多い (145件)</a>
+    <a href="dlc_PCSG00133.html" class="btn-dlc">DLCを見る (145件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00150_00-OBOROMURAMASA000.jpg" alt="image">
@@ -62,7 +76,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00307_00-GAME000000000000.jpg" alt="image">
     <p>ヴァルハラナイツ3 GOLD</p>
     <a href="psns:browse?product=JP0507-PCSG00307_00-GAME000000000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00307.html" class="btn-dlc">DLCが多い (56件)</a>
+    <a href="dlc_PCSG00307.html" class="btn-dlc">DLCを見る (56件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00310_00-ABSETSOUNDTRACK0.jpg" alt="image">
@@ -98,7 +112,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00418_00-0000000000000000.jpg" alt="image">
     <p>閃乱カグラ ESTIVAL VERSUS -少女達の選択- BEST UP！(PS Vita版)</p>
     <a href="psns:browse?product=JP0507-PCSG00418_00-0000000000000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00418.html" class="btn-dlc">DLCが多い (93件)</a>
+    <a href="dlc_PCSG00418.html" class="btn-dlc">DLCを見る (93件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00425_00-BAKUMATSUROCK000.jpg" alt="image">
@@ -115,19 +129,19 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00600_00-GAMEFATEEX000000.jpg" alt="image">
     <p>Fate/EXTELLA Best Collection</p>
     <a href="psns:browse?product=JP0507-PCSG00600_00-GAMEFATEEX000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00600.html" class="btn-dlc">DLCが多い (61件)</a>
+    <a href="dlc_PCSG00600.html" class="btn-dlc">DLCを見る (61件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00632_00-APP0000000000000.jpg" alt="image">
     <p>VALKYRIE DRIVE -BHIKKHUNI-</p>
     <a href="psns:browse?product=JP0507-PCSG00632_00-APP0000000000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00632.html" class="btn-dlc">DLCが多い (59件)</a>
+    <a href="dlc_PCSG00632.html" class="btn-dlc">DLCを見る (59件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00632_00-VDBBPEDITION0000.jpg" alt="image">
     <p>VALKYRIE DRIVE -BHIKKHUNI- Bikini Party Edition</p>
     <a href="psns:browse?product=JP0507-PCSG00632_00-VDBBPEDITION0000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00632.html" class="btn-dlc">DLCが多い (59件)</a>
+    <a href="dlc_PCSG00632.html" class="btn-dlc">DLCを見る (59件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG00633_00-0000000000000000.jpg" alt="image">
@@ -145,13 +159,13 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG01091_00-DIGITALDELUXE000.jpg" alt="image">
     <p>Fate/EXTELLA LINK デジタルデラックス(PS Vita版)</p>
     <a href="psns:browse?product=JP0507-PCSG01091_00-DIGITALDELUXE000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG01091.html" class="btn-dlc">DLCが多い (70件)</a>
+    <a href="dlc_PCSG01091.html" class="btn-dlc">DLCを見る (70件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0507-PCSG01091_00-FULLGAME00000000.jpg" alt="image">
     <p>Fate/EXTELLA LINK</p>
     <a href="psns:browse?product=JP0507-PCSG01091_00-FULLGAME00000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG01091.html" class="btn-dlc">DLCが多い (70件)</a>
+    <a href="dlc_PCSG01091.html" class="btn-dlc">DLCを見る (70件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0536-PCSG00687_00-CALIGULAPRODUCT1.jpg" alt="image">

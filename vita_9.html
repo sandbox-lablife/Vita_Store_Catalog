@@ -26,7 +26,21 @@
         }
         .pagination { margin: 20px 0; font-size: 16px; font-weight: bold; }
         .pagination a { padding: 10px 15px; background: #fff; border-radius: 5px; text-decoration: none; color: #003791; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 0 10px;}
-        .menu-btn { display: block; width: 80%; max-width: 300px; margin: 15px auto; padding: 15px; background: #fff; color: #003791; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        /* トップページ 2列レイアウト用スタイル（Vita完全互換テーブルレイアウト） */
+        .menu-container { display: table; width: 100%; max-width: 900px; margin: 15px auto; table-layout: fixed; }
+        .menu-col { display: table-cell; width: 50%; vertical-align: top; padding: 0 6px; box-sizing: border-box; }
+        .menu-btn { 
+            display: block; width: 100%; box-sizing: border-box; margin: 0 0 12px 0; padding: 14px 8px; 
+            background: #fff; color: #003791; text-decoration: none; border-radius: 8px; 
+            font-size: 15px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            border: 1px solid #dcdcdc; cursor: pointer; text-align: center; min-height: 48px;
+            font-family: inherit;
+        }
+        .menu-btn:active { transform: translateY(1px); }
+        .btn-search { background: #ffe833; color: #d32f2f; border-color: #fbc02d; }
+        .btn-custom-id { background: #e8f0fe; color: #1967d2; border-color: #aecbfa; }
+
         .search-box { width: 60%; max-width: 300px; padding: 12px; font-size: 16px; border: 2px solid #003791; border-radius: 8px; vertical-align: middle; }
         .search-btn { padding: 12px 20px; font-size: 16px; background: #003791; color: #fff; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; vertical-align: middle; margin-left: 5px; }
     </style>
@@ -74,7 +88,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00975_00-BBVITAPKG0000000.jpg" alt="image">
     <p>遙かなる時空の中で６ 幻燈ロンド</p>
     <a href="psns:browse?product=JP0106-PCSG00975_00-BBVITAPKG0000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00975.html" class="btn-dlc">DLCが多い (104件)</a>
+    <a href="dlc_PCSG00975.html" class="btn-dlc">DLCを見る (104件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00986_00-NIGHTSOFAZURE000.jpg" alt="image">
@@ -92,7 +106,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00992_00-HARUKA3ULTIMATE0.jpg" alt="image">
     <p>遙かなる時空の中で３ Ultimate</p>
     <a href="psns:browse?product=JP0106-PCSG00992_00-HARUKA3ULTIMATE0" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00992.html" class="btn-dlc">DLCが多い (58件)</a>
+    <a href="dlc_PCSG00992.html" class="btn-dlc">DLCを見る (58件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG01018_00-MUSOUSTARS000000.jpg" alt="image">
@@ -122,13 +136,13 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG01124_00-CORDA2FF00000000.jpg" alt="image">
     <p>金色のコルダ2ff</p>
     <a href="psns:browse?product=JP0106-PCSG01124_00-CORDA2FF00000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG01124.html" class="btn-dlc">DLCが多い (114件)</a>
+    <a href="dlc_PCSG01124.html" class="btn-dlc">DLCを見る (114件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG01157_00-HARUKAULTVITAPKG.jpg" alt="image">
     <p>遙かなる時空の中で Ultimate</p>
     <a href="psns:browse?product=JP0106-PCSG01157_00-HARUKAULTVITAPKG" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG01157.html" class="btn-dlc">DLCが多い (196件)</a>
+    <a href="dlc_PCSG01157.html" class="btn-dlc">DLCを見る (196件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG01174_00-WP82018V00000100.jpg" alt="image">
@@ -158,7 +172,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG01245_00-CORDAOCTAVE00000.jpg" alt="image">
     <p>金色のコルダ オクターヴ</p>
     <a href="psns:browse?product=JP0106-PCSG01245_00-CORDAOCTAVE00000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG01245.html" class="btn-dlc">DLCが多い (112件)</a>
+    <a href="dlc_PCSG01245.html" class="btn-dlc">DLCを見る (112件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0113-PCSG00268_00-TOTALRECOIL00001.jpg" alt="image">
@@ -309,19 +323,19 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0117-PCSG00489_00-JAPAN00000000003.jpg" alt="image">
     <p>英雄伝説 軌跡 Evolution 三昧</p>
     <a href="psns:browse?product=JP0117-PCSG00489_00-JAPAN00000000003" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00489.html" class="btn-dlc">DLCが多い (52件)</a>
+    <a href="dlc_PCSG00489.html" class="btn-dlc">DLCを見る (52件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0117-PCSG00489_00-KSEKEVOTRIPLESET.jpg" alt="image">
     <p>英雄伝説 空の軌跡 Evolution トリプルパック</p>
     <a href="psns:browse?product=JP0117-PCSG00489_00-KSEKEVOTRIPLESET" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00489.html" class="btn-dlc">DLCが多い (52件)</a>
+    <a href="dlc_PCSG00489.html" class="btn-dlc">DLCを見る (52件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0117-PCSG00489_00-SCEVOLUTION00000.jpg" alt="image">
     <p>英雄伝説 空の軌跡 SC Evolution</p>
     <a href="psns:browse?product=JP0117-PCSG00489_00-SCEVOLUTION00000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00489.html" class="btn-dlc">DLCが多い (52件)</a>
+    <a href="dlc_PCSG00489.html" class="btn-dlc">DLCを見る (52件)</a>
 </div>
 </div>
 <div class="pagination"><a href="vita_8.html">&laquo; 前へ</a><span> ページ 9 / 23 </span><a href="vita_10.html">次へ &raquo;</a></div>

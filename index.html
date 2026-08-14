@@ -26,18 +26,50 @@
         }
         .pagination { margin: 20px 0; font-size: 16px; font-weight: bold; }
         .pagination a { padding: 10px 15px; background: #fff; border-radius: 5px; text-decoration: none; color: #003791; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 0 10px;}
-        .menu-btn { display: block; width: 80%; max-width: 300px; margin: 15px auto; padding: 15px; background: #fff; color: #003791; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        /* トップページ 2列レイアウト用スタイル（Vita完全互換テーブルレイアウト） */
+        .menu-container { display: table; width: 100%; max-width: 900px; margin: 15px auto; table-layout: fixed; }
+        .menu-col { display: table-cell; width: 50%; vertical-align: top; padding: 0 6px; box-sizing: border-box; }
+        .menu-btn { 
+            display: block; width: 100%; box-sizing: border-box; margin: 0 0 12px 0; padding: 14px 8px; 
+            background: #fff; color: #003791; text-decoration: none; border-radius: 8px; 
+            font-size: 15px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            border: 1px solid #dcdcdc; cursor: pointer; text-align: center; min-height: 48px;
+            font-family: inherit;
+        }
+        .menu-btn:active { transform: translateY(1px); }
+        .btn-search { background: #ffe833; color: #d32f2f; border-color: #fbc02d; }
+        .btn-custom-id { background: #e8f0fe; color: #1967d2; border-color: #aecbfa; }
+
         .search-box { width: 60%; max-width: 300px; padding: 12px; font-size: 16px; border: 2px solid #003791; border-radius: 8px; vertical-align: middle; }
         .search-btn { padding: 12px 20px; font-size: 16px; background: #003791; color: #fff; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; vertical-align: middle; margin-left: 5px; }
     </style>
 </head>
 <body>
 <div class="header">Vita ストア リンク支援（個人用）</div>
-<a href="search.html" class="menu-btn" style="background: #ffeb3b; color: #d32f2f;">全ハードからキーワード検索</a>
-<a href="vita_1.html" class="menu-btn">PS Vita 本編 (1134件)</a>
-<a href="psp_1.html" class="menu-btn">PSP 本編 (681件)</a>
-<a href="ps1_1.html" class="menu-btn">PSアーカイブス (752件)</a>
-<a href="pce_1.html" class="menu-btn">PCエンジンアーカイブス (45件)</a>
+<div class="menu-container">
+    <div class="menu-col">
+        <a href="vita_1.html" class="menu-btn">PS Vita 本編 (1134件)</a>
+        <a href="psp_1.html" class="menu-btn">PSP 本編 (681件)</a>
+        <a href="ps1_1.html" class="menu-btn">PSアーカイブス (752件)</a>
+        <a href="pce_1.html" class="menu-btn">PCエンジンアーカイブス (45件)</a>
+    </div>
+    <div class="menu-col">
+        <a href="search.html" class="menu-btn btn-search">全ハードからキーワード検索</a>
+        <button type="button" class="menu-btn btn-custom-id" onclick="openDirectStore()">ソフトの個別IDを入力して検索</button>
+    </div>
+</div>
+<script>
+function openDirectStore() {
+    var contentId = prompt("ソフトの個別IDを貼り付けてください:\n(例: JP0700-NPJH50380_00-...)", "");
+    if (contentId) {
+        contentId = contentId.trim();
+        if (contentId.length > 0) {
+            window.location.href = "psns:browse?product=" + encodeURIComponent(contentId);
+        }
+    }
+}
+</script>
 
 </body>
 </html>

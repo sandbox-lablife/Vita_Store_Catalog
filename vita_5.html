@@ -26,7 +26,21 @@
         }
         .pagination { margin: 20px 0; font-size: 16px; font-weight: bold; }
         .pagination a { padding: 10px 15px; background: #fff; border-radius: 5px; text-decoration: none; color: #003791; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 0 10px;}
-        .menu-btn { display: block; width: 80%; max-width: 300px; margin: 15px auto; padding: 15px; background: #fff; color: #003791; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        /* トップページ 2列レイアウト用スタイル（Vita完全互換テーブルレイアウト） */
+        .menu-container { display: table; width: 100%; max-width: 900px; margin: 15px auto; table-layout: fixed; }
+        .menu-col { display: table-cell; width: 50%; vertical-align: top; padding: 0 6px; box-sizing: border-box; }
+        .menu-btn { 
+            display: block; width: 100%; box-sizing: border-box; margin: 0 0 12px 0; padding: 14px 8px; 
+            background: #fff; color: #003791; text-decoration: none; border-radius: 8px; 
+            font-size: 15px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            border: 1px solid #dcdcdc; cursor: pointer; text-align: center; min-height: 48px;
+            font-family: inherit;
+        }
+        .menu-btn:active { transform: translateY(1px); }
+        .btn-search { background: #ffe833; color: #d32f2f; border-color: #fbc02d; }
+        .btn-custom-id { background: #e8f0fe; color: #1967d2; border-color: #aecbfa; }
+
         .search-box { width: 60%; max-width: 300px; padding: 12px; font-size: 16px; border: 2px solid #003791; border-radius: 8px; vertical-align: middle; }
         .search-btn { padding: 12px 20px; font-size: 16px; background: #003791; color: #fff; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; vertical-align: middle; margin-left: 5px; }
     </style>
@@ -196,31 +210,31 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0048-PCSG00511_00-WIZARDRYPOLC0000.jpg" alt="image">
     <p>Wizardry 囚われし亡霊の街</p>
     <a href="psns:browse?product=JP0048-PCSG00511_00-WIZARDRYPOLC0000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00511.html" class="btn-dlc">DLCが多い (60件)</a>
+    <a href="dlc_PCSG00511.html" class="btn-dlc">DLCを見る (60件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0048-PCSG00511_00-WIZDL0000000FULL.jpg" alt="image">
     <p>Wizardry 囚われし亡霊の街 フルパック</p>
     <a href="psns:browse?product=JP0048-PCSG00511_00-WIZDL0000000FULL" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00511.html" class="btn-dlc">DLCが多い (60件)</a>
+    <a href="dlc_PCSG00511.html" class="btn-dlc">DLCを見る (60件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0048-PCSG00511_00-WIZDL000000TOTAL.jpg" alt="image">
     <p>Wizardry トータルパック</p>
     <a href="psns:browse?product=JP0048-PCSG00511_00-WIZDL000000TOTAL" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00511.html" class="btn-dlc">DLCが多い (60件)</a>
+    <a href="dlc_PCSG00511.html" class="btn-dlc">DLCを見る (60件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0048-PCSG00512_00-WIZARDRYLOLS0000.jpg" alt="image">
     <p>Wizardry 囚われし魂の迷宮</p>
     <a href="psns:browse?product=JP0048-PCSG00512_00-WIZARDRYLOLS0000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00512.html" class="btn-dlc">DLCが多い (61件)</a>
+    <a href="dlc_PCSG00512.html" class="btn-dlc">DLCを見る (61件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0048-PCSG00512_00-WIZARDRYLOLSFULL.jpg" alt="image">
     <p>Wizardry 囚われし魂の迷宮 フルパック</p>
     <a href="psns:browse?product=JP0048-PCSG00512_00-WIZARDRYLOLSFULL" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00512.html" class="btn-dlc">DLCが多い (61件)</a>
+    <a href="dlc_PCSG00512.html" class="btn-dlc">DLCを見る (61件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0048-PCSG00952_00-0000000000000000.jpg" alt="image">

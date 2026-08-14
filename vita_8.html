@@ -26,7 +26,21 @@
         }
         .pagination { margin: 20px 0; font-size: 16px; font-weight: bold; }
         .pagination a { padding: 10px 15px; background: #fff; border-radius: 5px; text-decoration: none; color: #003791; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 0 10px;}
-        .menu-btn { display: block; width: 80%; max-width: 300px; margin: 15px auto; padding: 15px; background: #fff; color: #003791; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        /* トップページ 2列レイアウト用スタイル（Vita完全互換テーブルレイアウト） */
+        .menu-container { display: table; width: 100%; max-width: 900px; margin: 15px auto; table-layout: fixed; }
+        .menu-col { display: table-cell; width: 50%; vertical-align: top; padding: 0 6px; box-sizing: border-box; }
+        .menu-btn { 
+            display: block; width: 100%; box-sizing: border-box; margin: 0 0 12px 0; padding: 14px 8px; 
+            background: #fff; color: #003791; text-decoration: none; border-radius: 8px; 
+            font-size: 15px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            border: 1px solid #dcdcdc; cursor: pointer; text-align: center; min-height: 48px;
+            font-family: inherit;
+        }
+        .menu-btn:active { transform: translateY(1px); }
+        .btn-search { background: #ffe833; color: #d32f2f; border-color: #fbc02d; }
+        .btn-custom-id { background: #e8f0fe; color: #1967d2; border-color: #aecbfa; }
+
         .search-box { width: 60%; max-width: 300px; padding: 12px; font-size: 16px; border: 2px solid #003791; border-radius: 8px; vertical-align: middle; }
         .search-btn { padding: 12px 20px; font-size: 16px; background: #003791; color: #fff; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; vertical-align: middle; margin-left: 5px; }
     </style>
@@ -38,13 +52,13 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0103-PCSG00046_00-APP0000000000000.jpg" alt="image">
     <p>シェルノサージュ～失われた星へ捧ぐ詩～ PlayStation®Vita the Best</p>
     <a href="psns:browse?product=JP0103-PCSG00046_00-APP0000000000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00046.html" class="btn-dlc">DLCが多い (85件)</a>
+    <a href="dlc_PCSG00046.html" class="btn-dlc">DLCを見る (85件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0103-PCSG00046_00-SET_INCARNATIONX.jpg" alt="image">
     <p>シェルノサージュ～失われた星へ捧ぐ詩～RE:Incarnation</p>
     <a href="psns:browse?product=JP0103-PCSG00046_00-SET_INCARNATIONX" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00046.html" class="btn-dlc">DLCが多い (85件)</a>
+    <a href="dlc_PCSG00046.html" class="btn-dlc">DLCを見る (85件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0103-PCSG00127_00-APP0000000000000.jpg" alt="image">
@@ -84,7 +98,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00002_00-MUSOUNEXT0000000.jpg" alt="image">
     <p>真・三國無双 NEXT　PlayStation®Vita the Best</p>
     <a href="psns:browse?product=JP0106-PCSG00002_00-MUSOUNEXT0000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00002.html" class="btn-dlc">DLCが多い (142件)</a>
+    <a href="dlc_PCSG00002.html" class="btn-dlc">DLCを見る (142件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00033_00-NGSP000000000000.jpg" alt="image">
@@ -113,7 +127,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00167_00-DEADORALIVE5PLUS.jpg" alt="image">
     <p>コーエーテクモ the Best DEAD OR ALIVE 5 PLUS</p>
     <a href="psns:browse?product=JP0106-PCSG00167_00-DEADORALIVE5PLUS" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00167.html" class="btn-dlc">DLCが多い (68件)</a>
+    <a href="dlc_PCSG00167.html" class="btn-dlc">DLCを見る (68件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00193_00-PKGTOUKIDEN00000.jpg" alt="image">
@@ -125,7 +139,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00209_00-OROCHI2ULTGAMEJP.jpg" alt="image">
     <p>無双OROCHI２ Ultimate PlayStation®Vita the Best</p>
     <a href="psns:browse?product=JP0106-PCSG00209_00-OROCHI2ULTGAMEJP" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00209.html" class="btn-dlc">DLCが多い (381件)</a>
+    <a href="dlc_PCSG00209.html" class="btn-dlc">DLCを見る (381件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00210_00-SANGOKUSHI12WPKV.jpg" alt="image">
@@ -152,13 +166,13 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00251_00-SM7WXLGAMEJP0000.jpg" alt="image">
     <p>『真・三國無双７ with 猛将伝』</p>
     <a href="psns:browse?product=JP0106-PCSG00251_00-SM7WXLGAMEJP0000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00251.html" class="btn-dlc">DLCが多い (454件)</a>
+    <a href="dlc_PCSG00251.html" class="btn-dlc">DLCを見る (454件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00279_00-APPLICATION00000.jpg" alt="image">
     <p>戦国無双４ PlayStation®Vita the Best</p>
     <a href="psns:browse?product=JP0106-PCSG00279_00-APPLICATION00000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00279.html" class="btn-dlc">DLCが多い (96件)</a>
+    <a href="dlc_PCSG00279.html" class="btn-dlc">DLCを見る (96件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00304_00-KAGERODSP0000000.jpg" alt="image">
@@ -182,19 +196,19 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00452_00-SM7EMPGAMEJP0000.jpg" alt="image">
     <p>真・三國無双７ Empires</p>
     <a href="psns:browse?product=JP0106-PCSG00452_00-SM7EMPGAMEJP0000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00452.html" class="btn-dlc">DLCが多い (111件)</a>
+    <a href="dlc_PCSG00452.html" class="btn-dlc">DLCを見る (111件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00453_00-SM7EMPGAMEJP0000.jpg" alt="image">
     <p>真・三國無双７ Empires　共闘版</p>
     <a href="psns:browse?product=JP0106-PCSG00453_00-SM7EMPGAMEJP0000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00453.html" class="btn-dlc">DLCが多い (264件)</a>
+    <a href="dlc_PCSG00453.html" class="btn-dlc">DLCを見る (264件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00471_00-APPLICATION00000.jpg" alt="image">
     <p>戦国無双 Chronicle ３</p>
     <a href="psns:browse?product=JP0106-PCSG00471_00-APPLICATION00000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00471.html" class="btn-dlc">DLCが多い (103件)</a>
+    <a href="dlc_PCSG00471.html" class="btn-dlc">DLCを見る (103件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00522_00-ESLOGIPLUSMASTER.jpg" alt="image">
@@ -253,7 +267,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00692_00-APPLICATION00000.jpg" alt="image">
     <p>戦国無双４ Empires</p>
     <a href="psns:browse?product=JP0106-PCSG00692_00-APPLICATION00000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00692.html" class="btn-dlc">DLCが多い (81件)</a>
+    <a href="dlc_PCSG00692.html" class="btn-dlc">DLCを見る (81件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00694_00-SOPHIE00MASTER00.jpg" alt="image">
@@ -288,7 +302,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00773_00-DOAX300000000000.jpg" alt="image">
     <p>DEAD OR ALIVE Xtreme 3 Venus 基本無料版</p>
     <a href="psns:browse?product=JP0106-PCSG00773_00-DOAX300000000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00773.html" class="btn-dlc">DLCが多い (92件)</a>
+    <a href="dlc_PCSG00773.html" class="btn-dlc">DLCを見る (92件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0106-PCSG00774_00-CORDA4VITAPKG000.jpg" alt="image">

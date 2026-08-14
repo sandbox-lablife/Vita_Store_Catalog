@@ -26,7 +26,21 @@
         }
         .pagination { margin: 20px 0; font-size: 16px; font-weight: bold; }
         .pagination a { padding: 10px 15px; background: #fff; border-radius: 5px; text-decoration: none; color: #003791; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin: 0 10px;}
-        .menu-btn { display: block; width: 80%; max-width: 300px; margin: 15px auto; padding: 15px; background: #fff; color: #003791; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        /* トップページ 2列レイアウト用スタイル（Vita完全互換テーブルレイアウト） */
+        .menu-container { display: table; width: 100%; max-width: 900px; margin: 15px auto; table-layout: fixed; }
+        .menu-col { display: table-cell; width: 50%; vertical-align: top; padding: 0 6px; box-sizing: border-box; }
+        .menu-btn { 
+            display: block; width: 100%; box-sizing: border-box; margin: 0 0 12px 0; padding: 14px 8px; 
+            background: #fff; color: #003791; text-decoration: none; border-radius: 8px; 
+            font-size: 15px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            border: 1px solid #dcdcdc; cursor: pointer; text-align: center; min-height: 48px;
+            font-family: inherit;
+        }
+        .menu-btn:active { transform: translateY(1px); }
+        .btn-search { background: #ffe833; color: #d32f2f; border-color: #fbc02d; }
+        .btn-custom-id { background: #e8f0fe; color: #1967d2; border-color: #aecbfa; }
+
         .search-box { width: 60%; max-width: 300px; padding: 12px; font-size: 16px; border: 2px solid #003791; border-radius: 8px; vertical-align: middle; }
         .search-btn { padding: 12px 20px; font-size: 16px; background: #003791; color: #fff; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; vertical-align: middle; margin-left: 5px; }
     </style>
@@ -65,13 +79,13 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0117-PCSG00781_00-RECOLOVE00000000.jpg" alt="image">
     <p>レコラヴ Blue Ocean</p>
     <a href="psns:browse?product=JP0117-PCSG00781_00-RECOLOVE00000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00781.html" class="btn-dlc">DLCが多い (292件)</a>
+    <a href="dlc_PCSG00781.html" class="btn-dlc">DLCを見る (292件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0117-PCSG00782_00-RECOLOVE00000000.jpg" alt="image">
     <p>レコラヴ Gold Beach</p>
     <a href="psns:browse?product=JP0117-PCSG00782_00-RECOLOVE00000000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00782.html" class="btn-dlc">DLCが多い (292件)</a>
+    <a href="dlc_PCSG00782.html" class="btn-dlc">DLCを見る (292件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0117-PCSG00831_00-GDWSADDCONTENT00.jpg" alt="image">
@@ -196,7 +210,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0127-PCSG00302_00-MINECRAFTVIT0000.jpg" alt="image">
     <p>Minecraft: PlayStation®Vita Edition</p>
     <a href="psns:browse?product=JP0127-PCSG00302_00-MINECRAFTVIT0000" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00302.html" class="btn-dlc">DLCが多い (74件)</a>
+    <a href="dlc_PCSG00302.html" class="btn-dlc">DLCを見る (74件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0129-PCSG00314_00-SCEJKUNGFURABBIT.jpg" alt="image">
@@ -296,7 +310,7 @@
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0177-PCSG00205_00-PJDF2MOMJTNSDAYO.jpg" alt="image">
     <p>初音ミク -Project DIVA- F 2nd</p>
     <a href="psns:browse?product=JP0177-PCSG00205_00-PJDF2MOMJTNSDAYO" class="btn">ストアを開く</a>
-    <a href="dlc_PCSG00205.html" class="btn-dlc">DLCが多い (105件)</a>
+    <a href="dlc_PCSG00205.html" class="btn-dlc">DLCを見る (105件)</a>
 </div>
 <div class="card">
     <img src="https://uopss.com/uopss/jp/s/contents_images/JP0177-PCSG00224_00-PUYOTETRIS000000.jpg" alt="image">
